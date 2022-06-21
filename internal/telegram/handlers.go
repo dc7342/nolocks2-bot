@@ -6,7 +6,6 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"log"
 	"nolocks-bot/internal/entity"
-	"strconv"
 )
 
 const (
@@ -38,10 +37,7 @@ func (t *Telegram) addCmd(u *tm.Update) {
 func (t *Telegram) newLocation(u *tm.Update) {
 	data := u.PersistenceContext.GetData()
 	// Remember location from the message.
-	// TODO: Make location coordinates in entity float.
-	loc := entity.NewLocation(
-		strconv.FormatFloat(u.Message.Location.Latitude, 'E', -1, 64),
-		strconv.FormatFloat(u.Message.Location.Latitude, 'E', -1, 64))
+	loc := entity.NewLocation(u.Message.Location.Latitude, u.Message.Location.Latitude)
 	data[dataStateLocation] = loc
 	u.PersistenceContext.SetData(data)
 	// Next handler awaiting comment.

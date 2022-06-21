@@ -26,7 +26,6 @@ func (t *Telegram) initMux() {
 	}
 
 	def := []*tm.Handler{
-		// TODO: Make external function.
 		tm.NewHandler(tm.IsCommandMessage(cmdTextCancel)),
 	}
 
@@ -34,7 +33,6 @@ func (t *Telegram) initMux() {
 		tm.NewHandler(tm.And(tm.IsPrivate(), tm.IsCommandMessage("start")), t.startCmd),
 	}
 
-	// TODO: Error handler!
 	t.cmds = tm.NewMux().
 		AddHandler(tm.NewConversationHandler("menu", tm.NewLocalPersistence(), stateMap, def)).
 		AddHandler(cmdHandler...).

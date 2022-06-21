@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"nolocks-bot/internal/entity"
 	"path"
+	"strconv"
 	"strings"
 )
 
@@ -41,8 +42,8 @@ func (h *HTTPClient) Send(loc *entity.Location) error {
 
 	// Craft multipart form.
 	// Ignore err handling it should be fine here.
-	bWrite.WriteField("longitude", loc.Lon)
-	bWrite.WriteField("latitude", loc.Lat)
+	bWrite.WriteField("longitude", strconv.FormatFloat(loc.Lon, 'f', 6, 64))
+	bWrite.WriteField("latitude", strconv.FormatFloat(loc.Lat, 'f', 6, 64))
 	bWrite.WriteField("comment", loc.Comment)
 
 	// If user sent an image, it is being downloaded from Telegram

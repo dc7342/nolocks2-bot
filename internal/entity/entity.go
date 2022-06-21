@@ -1,13 +1,13 @@
 package entity
 
 type Location struct {
-	Lon      string `json:"longitude"`
-	Lat      string `json:"latitude"`
-	Comment  string `json:"comment"`
-	ImageUrl string `json:"image"`
+	Lon      float64 `json:"longitude"`
+	Lat      float64 `json:"latitude"`
+	Comment  string  `json:"comment"`
+	ImageUrl string  `json:"image"`
 }
 
-func NewLocation(lon string, lat string) *Location {
+func NewLocation(lon float64, lat float64) *Location {
 	return &Location{Lon: lon, Lat: lat}
 }
 
