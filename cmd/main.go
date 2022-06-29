@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"nolocks-bot/internal/client"
-	"nolocks-bot/internal/service"
-	"nolocks-bot/internal/telegram"
-	"nolocks-bot/pkg/config"
+	"github.com/dc7342/nolocks2/internal/client"
+	"github.com/dc7342/nolocks2/internal/service"
+	"github.com/dc7342/nolocks2/internal/telegram"
+	"github.com/dc7342/nolocks2/pkg/config"
 )
 
 func main() {

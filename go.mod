@@ -1,4 +1,4 @@
-module nolocks-bot
+module github.com/dc7342/nolocks2
 
 go 1.18
 

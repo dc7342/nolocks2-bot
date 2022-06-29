@@ -2,9 +2,9 @@ package telegram
 
 import (
 	tm "github.com/and3rson/telemux/v2"
-	"github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"nolocks-bot/internal/service"
-	"nolocks-bot/pkg/config"
+	"github.com/dc7342/nolocks2/internal/service"
+	"github.com/dc7342/nolocks2/pkg/config"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 type Telegram struct {

@@ -1,6 +1,6 @@
 package client
 
-import "nolocks-bot/internal/entity"
+import "github.com/dc7342/nolocks2/internal/entity"
 
 type Client struct {
 	HTTPClient

@@ -3,9 +3,9 @@ package client
 import (
 	"bytes"
 	"encoding/json"
+	"github.com/dc7342/nolocks2/internal/entity"
 	"net/http"
 	"net/url"
-	"nolocks-bot/internal/entity"
 )
 
 const (

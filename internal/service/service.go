@@ -1,6 +1,6 @@
 package service
 
-import "nolocks-bot/internal/client"
+import "github.com/dc7342/nolocks2/internal/client"
 
 type Service struct {
 	Location

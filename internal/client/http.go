@@ -3,10 +3,10 @@ package client
 import (
 	"bytes"
 	"fmt"
+	"github.com/dc7342/nolocks2/internal/entity"
 	"io"
 	"mime/multipart"
 	"net/http"
-	"nolocks-bot/internal/entity"
 	"path"
 	"strconv"
 	"strings"

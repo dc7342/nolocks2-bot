@@ -3,9 +3,9 @@ package telegram
 import (
 	"fmt"
 	tm "github.com/and3rson/telemux/v2"
+	"github.com/dc7342/nolocks2/internal/entity"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"log"
-	"nolocks-bot/internal/entity"
 )
 
 const (
