@@ -1,0 +1,18 @@
+Telegram:
+  Token: "telegram-token"
+  Timeout: 5
+
+Text:
+  WelcomeMessage: "Привет, это бот проекта NoLocks – https://nolocks.dc7342.im/"
+  UnknownMessage: "Не понял команду"
+  AddMessage: "Хорошо, поделись своей локацией"
+  AddComment: "Можешь описать, что тут такое?"
+  AddPhoto: "А сможешь прислать фото? Можешь скипнуть это с помощью /skip"
+  Done: "Отлично, готово"
+  OnError: "Ой, что-то сломалось"
+  Canceled: "Хорошо, отменил"
+
+NoLocks:
+  EndpointURL: "http://localhost:8000/api/"
+  User: "bot"
+  Pass: "bot"
